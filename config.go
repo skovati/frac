@@ -13,7 +13,7 @@ type Config struct {
     maxImag     float64
 }
 
-func (c Config) toReal(x int) (float64, error) {
+func toReal(c Config, x int) (float64, error) {
     if x >= c.width || x < 0 {
         return 0, errors.New("X OOB")
     }
@@ -21,9 +21,9 @@ func (c Config) toReal(x int) (float64, error) {
     return c.minReal + float64(x)*size, nil
 }
 
-func (c Config) toImag(y int) (float64, error) {
+func toImag(c Config, y int) (float64, error) {
   if y >= c.height || y < 0 {
-    return 0, errors.New("Y is out of bounds")
+    return 0, errors.New("Y OOB")
   }
   size := ((c.maxImag - c.minImag) / float64(c.height-1))
 
