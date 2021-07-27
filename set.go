@@ -5,7 +5,7 @@ import (
 )
 
 var two complex128 = 2 + 0i
-var maxIter = 20
+var maxIter = 80
 
 func isElement(c complex128) bool {
     z := complex(0, 0) 
