@@ -15,4 +15,4 @@
 # vendor/
 
 # ignore output pngs
-*.png
+# *.png
