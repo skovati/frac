@@ -1,5 +1,5 @@
 # frac
-### A multithreaded, antialiased, and colored Julia set generator
+### A multithreaded, antialiased, and colored mandelbrot set generator
 ![](frac.png)
 
 ## installation
